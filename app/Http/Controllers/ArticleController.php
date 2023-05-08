@@ -83,8 +83,8 @@ class ArticleController extends Controller
         $ar=new V_article();
        if($request->input('query')!==null){
         $a=$request->input('query');
-        $ar=$ar->where('title', 'like', '%'.$a.'%')
-        ->orWhere('description', 'like', '%'.$a.'%');
+        $ar=$ar->where('titre', 'like', '%'.$a.'%')
+        ->orWhere('resume', 'like', '%'.$a.'%');
        }
         $liste= $ar->orderByDesc('datecreation')->paginate(3);
         foreach($liste as $l){ $this->addslug($l,'titre','slug'); }
