@@ -13,6 +13,7 @@
     </h1>
     <section>
         <h3>Form</h3>
+        <h4>{{message}}</h4>
         <form method="post" action="/admin">
             @csrf
             <div class="row gtr-uniform">

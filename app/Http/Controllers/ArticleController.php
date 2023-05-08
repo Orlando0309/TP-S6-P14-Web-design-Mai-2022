@@ -16,7 +16,8 @@ class ArticleController extends Controller
 {
     //
     public function start(){
-        return view('backlog');
+        $data=['message'=>''];
+        return view('backlog',$data);
     }
 
     public function logadmin(Request $request){
@@ -29,7 +30,7 @@ class ArticleController extends Controller
             session()->put('user', $administrateur);
             return redirect()->route('liste');
         }else{
-            return redirect()->route('start');
+            return redirect()->route('start')->with('message','You are not connected');
         }
     }
     public function create(){
@@ -46,6 +47,11 @@ class ArticleController extends Controller
     
     public function addslug(object $o,$field,$title){
         $o[$title]=$this->slugtitle($o[$field]);
+    }
+
+    public function disconnect(){
+        session()->forget('user');
+        return redirect()->route('start');
     }
 
 

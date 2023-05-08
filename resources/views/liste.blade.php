@@ -149,7 +149,7 @@
           <!-- Actions -->
             <section>
               <ul class="actions stacked">
-                <li><a href="/" class="button large fit">Log In</a></li>
+                <li><a href="/log" class="button large fit">Log In</a></li>
               </ul>
             </section>
 
