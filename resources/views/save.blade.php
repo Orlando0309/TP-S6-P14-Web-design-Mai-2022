@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <meta name="description" content="new Article">
         <title >Inserer Article</title>
         <script src="{{ secure_url('vendor/ckeditor/ckeditor.js') }}"></script>
         <link href="{{secure_url('vendor/ckeditor/contents.css') }}" rel="stylesheet">

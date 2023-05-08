@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="{{ $article->resume }}">
     <title>Mis a jour de {{ $article->titre }}</title>
-    <script src="{{ url('/ckeditor/ckeditor.js') }}"></script>
-    <link href="{{url('/ckeditor/contents.css') }}" rel="stylesheet">
+    <script src="{{ secure_url('vendor/ckeditor/ckeditor.js') }}"></script>
+    <link href="{{secure_url('vendor/ckeditor/contents.css') }}" rel="stylesheet">
     <link href="{{secure_url('assets/css/main.css') }}" rel="stylesheet">
 </head>
 <body>
