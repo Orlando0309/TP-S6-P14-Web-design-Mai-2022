@@ -81,8 +81,8 @@ class ArticleController extends Controller
 
     public function list(Request $request){
         $ar=new V_article();
-       if($request->input('q')!==null){
-        $a=$request->input('q');
+       if($request->input('query')!==null){
+        $a=$request->input('query');
         $ar=$ar->where('title', 'like', '%'.$a.'%')
         ->orWhere('description', 'like', '%'.$a.'%');
        }

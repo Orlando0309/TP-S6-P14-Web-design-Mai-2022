@@ -106,7 +106,7 @@
 
           <!-- Search -->
             <section>
-              <form class="search" method="get" action="/liste">
+              <form class="search" method="get" action="/article/liste">
                 <input type="text" name="query" placeholder="Search" />
                 <input type="submit" value="search">
               </form>
