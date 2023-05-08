@@ -79,14 +79,24 @@ class ArticleController extends Controller
     }
 
 
-    public function list(){
+    public function list(Request $request){
         $ar=new V_article();
-       
+       if($request->input('q')!==null){
+        $a=$request->input('q');
+        $ar=$ar->where('title', 'like', '%'.$a.'%')
+        ->orWhere('description', 'like', '%'.$a.'%');
+       }
         $liste= $ar->orderByDesc('datecreation')->paginate(3);
         foreach($liste as $l){ $this->addslug($l,'titre','slug'); }
 
         $data=['liste'=>$liste];
-        return view('liste',$data);
+        $view= view('liste',$data);
+        $key="liste";
+        if(!Cache::has($key)){
+            Cache::put($key, $view);
+        }
+        return Cache::get($key);
+
     }
 
     public function show($id){
@@ -98,7 +108,7 @@ class ArticleController extends Controller
         if(!Cache::has($key)){
             Cache::put($key, $view);
         }
-        return view('fiche',$data); //Cache::get($key);
+        return Cache::get($key);
     }
 
     public function update($id,$titre){
@@ -120,6 +130,10 @@ class ArticleController extends Controller
         $key='fiche-'.$id;
         if(Cache::has($key)){
             Cache::forget($key);
+        }
+        if(Cache::has('liste')){
+
+            Cache::forget('liste');
         }
             $alefa=V_article::find($id);
         $this->addslug($alefa,'titre','slug');

@@ -167,7 +167,6 @@
                 </div>
                 <div class="meta">
                   <time class="published" datetime="{{\Carbon\Carbon::createFromFormat('Y-m-d H:i:s', $l->datecreation)->format('Y-m-d') }}">{{ \Carbon\Carbon::createFromFormat('Y-m-d H:i:s', $l->datecreation)->format('F d, Y') }}</time>
-                  <a href="#" class="author"><span class="name">Jane Doe</span><img src="images/avatar.jpg" alt="" /></a>
                 </div>
               </header>
               <a href="/article/{{$l->id.'-'.$l->slug}}" class="image featured"><img src="{{ $l->image }}" alt="" /></a>
