@@ -5,8 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title >Inserer Article</title>
-        <script src="{{ secure_url('/ckeditor/ckeditor.js') }}"></script>
-        <link href="{{secure_url('/ckeditor/contents.css') }}" rel="stylesheet">
+        <script src="{{ secure_url('/ckeditor/ckeditor/ckeditor.js') }}"></script>
+        <link href="{{secure_url('/ckeditor/ckeditor/contents.css') }}" rel="stylesheet">
         <link href="{{secure_url('assets/css/main.css') }}" rel="stylesheet">
     
     </head>
