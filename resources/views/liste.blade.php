@@ -76,7 +76,7 @@
 
       <!-- Header -->
         <header id="header">
-          <h1><a href="index.html">AI ARTICLE</a></h1>
+          <h1><a href="/">AI ARTICLE</a></h1>
           <nav class="links">
             <ul>
               @if (session('user'))

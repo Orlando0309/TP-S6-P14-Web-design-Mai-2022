@@ -18,22 +18,22 @@
                     <ul>
                       @if (session('user'))
                       <li><a href="/article/">NEW ARTICLE</a></li>
-                      
+                      <li><a href="/log out/">LOG OUT</a></li>
+                      @else
+                      <li><a href="/log/">LOG IN</a></li>
                       @endif
         
                       <li><a href="/">MORE ARTICLES</a></li>
-                      <li><a href="#">Feugiat</a></li>
-                      <li><a href="#">Tempus</a></li>
-                      <li><a href="#">Adipiscing</a></li>
                     </ul>
                   </nav>
                 <nav class="main">
                     <ul>
                         <li class="search">
                             <a class="fa-search" href="#search">Search</a>
-                            <form id="search" method="get" action="#">
+                            <form class="search" method="get" action="/article/liste">
                                 <input type="text" name="query" placeholder="Search" />
-                            </form>
+                                <input type="submit" value="search">
+                              </form>
                         </li>
                         <li class="menu">
                             <a class="fa-bars" href="#menu">Menu</a>
