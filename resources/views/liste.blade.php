@@ -109,6 +109,7 @@
 
           <!-- Search -->
             <section>
+              <a href="/" class="button large fit">Log In</a>
               <form class="search" method="get" action="#">
                 <input type="text" name="query" placeholder="Search" />
               </form>

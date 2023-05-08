@@ -21,7 +21,7 @@
                       
                       @endif
         
-                      <li><a href="#">Ipsum</a></li>
+                      <li><a href="/">MORE ARTICLES</a></li>
                       <li><a href="#">Feugiat</a></li>
                       <li><a href="#">Tempus</a></li>
                       <li><a href="#">Adipiscing</a></li>
