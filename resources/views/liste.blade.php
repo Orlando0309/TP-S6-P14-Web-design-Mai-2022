@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="articles lists">
     <title>Liste des Articles</title>
-    <link href="{{secure_url('mycss/css/style.css') }}" rel="stylesheet">
-    <link href="{{secure_url('mycss/css/style2.css') }}" rel="stylesheet">
-    <link href="{{secure_url('mycss/assets/css/main.css') }}" rel="stylesheet">
-    <link href="{{secure_url('mycss/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{secure_url('css/style.css') }}" rel="stylesheet">
+    <link href="{{secure_url('css/style2.css') }}" rel="stylesheet">
+    <link href="{{secure_url('assets/css/main.css') }}" rel="stylesheet">
+    <link href="{{secure_url('css/bootstrap.min.css') }}" rel="stylesheet">
     <style>
       .pagination-wrapper {
     text-align: center;
