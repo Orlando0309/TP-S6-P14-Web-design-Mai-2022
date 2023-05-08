@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{{ $article->resume }}">
-    <link href="{{secure_url('assets/css/main.css') }}" rel="stylesheet">
+    <link href="{{secure_url('mycss/assets/css/main.css') }}" rel="stylesheet">
     <title>{{ $article->titre }}</title>
 </head>
 <body class="single is-preload">
@@ -103,11 +103,11 @@
             </section>
 
     </div>
-    <script src="{{secure_url('assets/js/jquery.min.js')}}"></script>
-    <script src="{{secure_url('assets/js/browser.min.js')}}"></script>
-    <script src="{{secure_url('assets/js/breakpoints.min.js')}}"></script>
-    <script src="{{secure_url('assets/js/util.js')}}"></script>
-    <script src="{{secure_url('assets/js/main.js')}}"></script>
-    <script src="{{secure_url('js/bootstrap.bundle.js')}}"></script>
+    <script src="{{secure_url('mycss/assets/js/jquery.min.js')}}"></script>
+    <script src="{{secure_url('mycss/assets/js/browser.min.js')}}"></script>
+    <script src="{{secure_url('mycss/assets/js/breakpoints.min.js')}}"></script>
+    <script src="{{secure_url('mycss/assets/js/util.js')}}"></script>
+    <script src="{{secure_url('mycss/assets/js/main.js')}}"></script>
+    <script src="{{secure_url('mycss/js/bootstrap.bundle.js')}}"></script>
 </body>
 </html>

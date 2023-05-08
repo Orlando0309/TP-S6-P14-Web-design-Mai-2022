@@ -29,6 +29,7 @@ Route::prefix('article')->group(function () {
     Route::get('/', [ArticleController::class,"create"]);
     Route::post('/save', [ArticleController::class,"save"]);
     Route::get('/liste',[ArticleController::class,"list"])->name('liste');
+    // Route::get('/search',[ArticleController::class,"list"])->name('liste');
     Route::get('/{id}-{titre}',[ArticleController::class,"show"]);
     Route::get('/update/{id}/{titre}',[ArticleController::class,"update"])->where(['id'=>'[0-9]+'])->middleware(CheckUserRole::class);
     Route::post('/exeupdate/{id}',[ArticleController::class,"exeupdate"])->middleware(CheckUserRole::class);
@@ -36,13 +37,13 @@ Route::prefix('article')->group(function () {
 
 
 Route::middleware('cache.headers:public;max_age=3600;etag')->group(function () {
-    Route::get('/ckeditor/{any}', function (Request $request) {
-        $path = 'vendor/' . $request->path();
-        $path=str_replace('/','\\',$path);
+    Route::get('/mycss/{any}', function (Request $request) {
+        $path = $request->path();
+        // $path=str_replace('/','\\',$path);
         
-        if (File::exists(public_path($path))) {
+        if (File::exists($path)) {
             $contentType=(new MymeType())->mime_type($path);
-            $response = new Illuminate\Http\Response(File::get(public_path($path)), 200);
+            $response = new Illuminate\Http\Response(File::get($path), 200);
             $response->header('Content-Type', $contentType);
             return $response;
         } else {
