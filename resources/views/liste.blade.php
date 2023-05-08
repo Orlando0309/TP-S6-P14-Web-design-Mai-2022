@@ -51,7 +51,7 @@
     </style>
 </head>
 <body>
-    <h1>Liste des articles</h1>
+    <h1>Liste des articless</h1>
     <div class="wrapper">
         {{-- @foreach($liste as $l) --}}
 {{-- <div class="clash-card barbarian">

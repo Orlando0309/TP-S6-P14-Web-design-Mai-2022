@@ -90,12 +90,7 @@ class ArticleController extends Controller
         foreach($liste as $l){ $this->addslug($l,'titre','slug'); }
 
         $data=['liste'=>$liste];
-        $view= view('liste',$data)->render();
-        $key="liste";
-        if(!Cache::has($key)){
-            Cache::put($key, $view);
-        }
-        return Cache::get($key);
+        return view('liste',$data);
 
     }
 
@@ -130,10 +125,6 @@ class ArticleController extends Controller
         $key='fiche-'.$id;
         if(Cache::has($key)){
             Cache::forget($key);
-        }
-        if(Cache::has('liste')){
-
-            Cache::forget('liste');
         }
             $alefa=V_article::find($id);
         $this->addslug($alefa,'titre','slug');
