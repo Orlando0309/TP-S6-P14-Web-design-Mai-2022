@@ -5,9 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="new Article">
         <title >Inserer Article</title>
-        <script src="{{ secure_url('mycss/vendor/ckeditor/ckeditor.js') }}"></script>
-        <link href="{{secure_url('mycss/vendor/ckeditor/contents.css') }}" rel="stylesheet">
-        <link href="{{secure_url('mycss/assets/css/main.css') }}" rel="stylesheet">
+        <script src="{{ secure_url('vendor/ckeditor/ckeditor.js') }}"></script>
+        <link href="{{secure_url('vendor/ckeditor/contents.css') }}" rel="stylesheet">
+        <link href="{{secure_url('assets/css/main.css') }}" rel="stylesheet">
     
     </head>
     <body class="font-sans antialiased">

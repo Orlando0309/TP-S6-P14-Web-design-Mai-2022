@@ -231,12 +231,12 @@
     </div>
 
   <!-- Scripts -->
-    <script src="{{secure_url('mycss/assets/js/jquery.min.js')}}"></script>
-    <script src="{{secure_url('mycss/assets/js/browser.min.js')}}"></script>
-    <script src="{{secure_url('mycss/assets/js/breakpoints.min.js')}}"></script>
-    <script src="{{secure_url('mycss/assets/js/util.js')}}"></script>
-    <script src="{{secure_url('mycss/assets/js/main.js')}}"></script>
-    <script src="{{secure_url('mycss/js/bootstrap.bundle.js')}}"></script>
+    <script src="{{secure_url('assets/js/jquery.min.js')}}"></script>
+    <script src="{{secure_url('assets/js/browser.min.js')}}"></script>
+    <script src="{{secure_url('assets/js/breakpoints.min.js')}}"></script>
+    <script src="{{secure_url('assets/js/util.js')}}"></script>
+    <script src="{{secure_url('assets/js/main.js')}}"></script>
+    <script src="{{secure_url('js/bootstrap.bundle.js')}}"></script>
     </div>
 </body>
 </html>
