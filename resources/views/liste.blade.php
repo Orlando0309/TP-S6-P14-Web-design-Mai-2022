@@ -189,7 +189,7 @@
                   <article class="mini-post">
                     <header>
                       <h3><a href="/article/{{$l->id.'-'.$l->slug}}">{{ $l->titre }}</a></h3>
-                      <time class="published" datetime="{{\Carbon\Carbon::createFromFormat('Y-m-d H:i:s', $l->datecreation)->format('Y-m-d') }}">{{ \Carbon\Carbon::createFromFormat('Y-m-d H:i:s', $l->datecreation)->format('F d, Y') }}</time>
+                      {{-- <time class="published" datetime="{{\Carbon\Carbon::createFromFormat('Y-m-d H:i:s', $l->datecreation)->format('Y-m-d') }}">{{ \Carbon\Carbon::createFromFormat('Y-m-d H:i:s', $l->datecreation)->format('F d, Y') }}</time> --}}
                       <a class="author" href="/article/{{$l->id.'-'.$l->slug}}" class="image featured"><img src="{{ $l->image }}" alt="" /></a>
                     </header>
                     <a class="image" href="/article/{{$l->id.'-'.$l->slug}}" class="image featured"><img src="{{ $l->image }}" alt="" /></a>
