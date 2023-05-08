@@ -68,8 +68,7 @@
                             </div>
                             <div class="meta">
                                 <time class="published" datetime="{{\Carbon\Carbon::createFromFormat('Y-m-d H:i:s.u', $article->datecreation)->format('Y-m-d') }}">{{\Carbon\Carbon::createFromFormat('Y-m-d H:i:s.u', $article->datecreation)->format('F d, Y')}}</time>
-                                <a href="#" class="author"><span class="name">Jane Doe</span><img src="images/avatar.jpg" alt="Photo AI" /></a>
-                                <p>Identifiant: {{ $article->articleid }}
+                                <span class="image featured"><img src="{{$article->image}}" alt="" /></span>                                <p>Identifiant: {{ $article->articleid }}
                                 <strong>Categorie:</strong>{{ $article->nomcategorie }}
                                 </p>
                             </div>
