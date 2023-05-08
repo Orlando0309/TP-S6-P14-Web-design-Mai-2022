@@ -77,6 +77,19 @@ Route::middleware('cache.headers:public;max_age=3600;etag')->group(function () {
             abort(404);
         }
     })->where('any', '.*');
+
+    Route::get('/assets/js/{any}', function ($mylink) {
+        $path =$mylink;
+        // $path=str_replace('/','\\',$path);
+        if (File::exists($path)) {
+            $contentType=(new MymeType())->mime_type($path);
+            $response = new Illuminate\Http\Response(File::get($path), 200);
+            $response->header('Content-Type', $contentType);
+            return $response;
+        } else {
+            abort(404);
+        }
+    })->where('any', '.*');
     Route::get('/js/{any}', function ($mylink) {
         $path =$mylink;
         // $path=str_replace('/','\\',$path);
