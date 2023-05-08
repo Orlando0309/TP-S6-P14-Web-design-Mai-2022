@@ -51,7 +51,7 @@
     </style>
 </head>
 <body>
-    <h1>Liste des articless</h1>
+    <h1>Liste des articles</h1>
     <div class="wrapper">
         {{-- @foreach($liste as $l) --}}
 {{-- <div class="clash-card barbarian">
@@ -76,7 +76,7 @@
 
       <!-- Header -->
         <header id="header">
-          <h1><a href="index.html">Future Imperfect</a></h1>
+          <h1><a href="index.html">AI ARTICLE</a></h1>
           <nav class="links">
             <ul>
               @if (session('user'))
@@ -94,7 +94,7 @@
             <ul>
               <li class="search">
                 <a class="fa-search" href="#search">Search</a>
-                <form id="search" method="get" action="/liste">
+                <form id="search" method="get" action="/article/liste">
                   <input type="text" name="q" placeholder="Search" />
                   <input type="submit" value="search">
                 </form>

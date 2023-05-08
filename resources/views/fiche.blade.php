@@ -103,11 +103,11 @@
             </section>
 
     </div>
-    <script src="{{secure_url(' assets/js/jquery.min.js')}}"></script>
-    <script src="{{secure_url(' assets/js/browser.min.js')}}"></script>
-    <script src="{{secure_url(' assets/js/breakpoints.min.js')}}"></script>
-    <script src="{{secure_url(' assets/js/util.js')}}"></script>
-    <script src="{{secure_url(' assets/js/main.js')}}"></script>
-    <script src="{{secure_url(' js/bootstrap.bundle.js')}}"></script>
+    <script src="{{secure_url('assets/js/jquery.min.js')}}"></script>
+    <script src="{{secure_url('assets/js/browser.min.js')}}"></script>
+    <script src="{{secure_url('assets/js/breakpoints.min.js')}}"></script>
+    <script src="{{secure_url('assets/js/util.js')}}"></script>
+    <script src="{{secure_url('assets/js/main.js')}}"></script>
+    <script src="{{secure_url('js/bootstrap.bundle.js')}}"></script>
 </body>
 </html>
