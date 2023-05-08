@@ -30,10 +30,7 @@
                     <ul>
                         <li class="search">
                             <a class="fa-search" href="#search">Search</a>
-                            <form class="search" method="get" action="/article/liste">
-                                <input type="text" name="query" placeholder="Search" />
-                                <input type="submit" value="search">
-                              </form>
+                            
                         </li>
                         <li class="menu">
                             <a class="fa-bars" href="#menu">Menu</a>
@@ -47,9 +44,10 @@
 
                 <!-- Search -->
                     <section>
-                        <form class="search" method="get" action="#">
+                        <form class="search" method="get" action="/article/liste">
                             <input type="text" name="query" placeholder="Search" />
-                        </form>
+                            <input type="submit" value="search">
+                          </form>
                     </section>
 
             </section>
