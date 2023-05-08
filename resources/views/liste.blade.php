@@ -147,7 +147,8 @@
                   <p>{{ $l->nomcategorie }}</p>
                 </div>
                 <div class="meta">
-                  <time class="published" datetime="{{\Carbon\Carbon::createFromFormat('Y-m-d H:i:s', $l->datecreation)->format('Y-m-d') }}">{{ \Carbon\Carbon::createFromFormat('Y-m-d H:i:s', $l->datecreation)->format('F d, Y') }}</time>
+                  {{$l->datecreation}}
+                  {{-- <time class="published" datetime="{{\Carbon\Carbon::createFromFormat('Y-m-d H:i:s', $l->datecreation)->format('Y-m-d') }}">{{ \Carbon\Carbon::createFromFormat('Y-m-d H:i:s', $l->datecreation)->format('F d, Y') }}</time> --}}
                 </div>
               </header>
               <a href="/article/{{$l->id.'-'.$l->slug}}" class="image featured"><img src="{{ $l->image }}" alt="" /></a>

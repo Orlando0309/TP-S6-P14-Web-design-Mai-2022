@@ -11,6 +11,7 @@
     
     </head>
     <body class="font-sans antialiased">
+        <h1>New Article</h1>
         <form action="/article/save" method="POST" enctype="multipart/form-data">
         @csrf
             <div class="row gtr-uniform">
