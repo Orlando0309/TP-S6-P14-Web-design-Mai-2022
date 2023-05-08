@@ -22,7 +22,7 @@ use App\Http\Middleware\CheckUserRole;
 
 // Route::get('/article/', [ArticleController::class,"create"]);
 
-Route::get('/', [ArticleController::class,"start"])->name('start');
+Route::get('/', [ArticleController::class,"list"])->name('start');
 Route::post('/admin',[ArticleController::class,"logadmin"])->name('logadmin');
 Route::prefix('article')->group(function () {
     Route::get('/', [ArticleController::class,"create"]);
