@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1>
-        IA Blog | ARE YOU IN
+        IA Article | ARE YOU IN
     </h1>
     <section>
         <h3>Form</h3>
@@ -18,11 +18,11 @@
             @csrf
             <div class="row gtr-uniform">
                 <div class="col-12 col-6-xsmall">
-                    <input type="email" name="identifiant" id="identifiant" value="" placeholder="Email" />
+                    <input type="email" name="identifiant" id="identifiant" value="admin@gmail.com" placeholder="Email" />
                 </div>
   
                 <div class="col-12 col-6-xsmall">
-                    <input type="password" name="password" id="password" value="" placeholder="Password" />
+                    <input type="password" name="password" id="password" value="admin123" placeholder="Password" />
                 </div>
                 
                 <div class="col-12">

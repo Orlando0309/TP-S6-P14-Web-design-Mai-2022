@@ -80,9 +80,11 @@
           <nav class="links">
             <ul>
               @if (session('user'))
-              <li><a href="/article/">NEW ARTICLE</a></li>
-              
-              @endif
+                      <li><a href="/article/">NEW ARTICLE</a></li>
+                      <li><a href="/log out/">LOG OUT</a></li>
+                      @else
+                      <li><a href="/log/">LOG IN</a></li>
+                      @endif
             </ul>
           </nav>
           <nav class="main">
