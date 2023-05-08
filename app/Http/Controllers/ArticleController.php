@@ -56,8 +56,9 @@ class ArticleController extends Controller
             $vaovao[$f]=$resquest->input($f);
         }
         // dd($pic->image);
-        $vaovao->image=$this->upload($pic);
+        $vaovao->image='data:image/jpeg;base64,'.$this->upload($pic);
         $vaovao->save();
+        return redirect()->route('liste');
     }
 
     public function upload(ImageUploadRequest $request){
