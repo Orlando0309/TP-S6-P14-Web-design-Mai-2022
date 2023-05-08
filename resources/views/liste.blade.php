@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liste des Articles</title>
-    <link href="{{asset('css/style.css') }}" rel="stylesheet">
-    <link href="{{asset('css/style2.css') }}" rel="stylesheet">
-    <link href="{{asset('assets/css/main.css') }}" rel="stylesheet">
-    <link href="{{asset('css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{secure_url('css/style.css') }}" rel="stylesheet">
+    <link href="{{secure_url('css/style2.css') }}" rel="stylesheet">
+    <link href="{{secure_url('assets/css/main.css') }}" rel="stylesheet">
+    <link href="{{secure_url('css/bootstrap.min.css') }}" rel="stylesheet">
     <style>
       .pagination-wrapper {
     text-align: center;
@@ -321,12 +321,12 @@
     </div>
 
   <!-- Scripts -->
-    <script src="{{asset('assets/js/jquery.min.js')}}"></script>
-    <script src="{{asset('assets/js/browser.min.js')}}"></script>
-    <script src="{{asset('assets/js/breakpoints.min.js')}}"></script>
-    <script src="{{asset('assets/js/util.js')}}"></script>
-    <script src="{{asset('assets/js/main.js')}}"></script>
-    <script src="{{asset('js/bootstrap.bundle.js')}}"></script>
+    <script src="{{secure_url('assets/js/jquery.min.js')}}"></script>
+    <script src="{{secure_url('assets/js/browser.min.js')}}"></script>
+    <script src="{{secure_url('assets/js/breakpoints.min.js')}}"></script>
+    <script src="{{secure_url('assets/js/util.js')}}"></script>
+    <script src="{{secure_url('assets/js/main.js')}}"></script>
+    <script src="{{secure_url('js/bootstrap.bundle.js')}}"></script>
     </div>
 </body>
 </html>

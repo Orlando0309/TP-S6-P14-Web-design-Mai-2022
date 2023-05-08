@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Log First</title>
-    <link href="{{asset('assets/css/main.css') }}" rel="stylesheet">
+    <link href="{{secure_url('assets/css/main.css') }}" rel="stylesheet">
 </head>
 <body>
     <h1>

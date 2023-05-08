@@ -7,7 +7,7 @@
         <title >Inserer Article</title>
         <script src="{{ url('/ckeditor/ckeditor.js') }}"></script>
         <link href="{{url('/ckeditor/contents.css') }}" rel="stylesheet">
-        <link href="{{asset('assets/css/main.css') }}" rel="stylesheet">
+        <link href="{{secure_url('assets/css/main.css') }}" rel="stylesheet">
     
     </head>
     <body class="font-sans antialiased">
