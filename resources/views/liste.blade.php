@@ -164,7 +164,7 @@
                   <p>{{ $l->nomcategorie }}</p>
                 </div>
                 <div class="meta">
-                  <time class="published" datetime="{{\Carbon\Carbon::createFromFormat('Y-m-d H:i:s.u', $l->datecreation)->format('Y-m-d') }}">{{ \Carbon\Carbon::createFromFormat('Y-m-d H:i:s.u', $l->datecreation)->format('F d, Y') }}</time>
+                  <time class="published" datetime="{{\Carbon\Carbon::createFromFormat('Y-m-d H:i:s', $l->datecreation)->format('Y-m-d') }}">{{ \Carbon\Carbon::createFromFormat('Y-m-d H:i:s', $l->datecreation)->format('F d, Y') }}</time>
                   <a href="#" class="author"><span class="name">Jane Doe</span><img src="images/avatar.jpg" alt="" /></a>
                 </div>
               </header>
