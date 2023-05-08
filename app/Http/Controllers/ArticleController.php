@@ -51,7 +51,7 @@ class ArticleController extends Controller
 
     public function disconnect(){
         session()->forget('user');
-        return redirect()->route('start');
+        return redirect()->route('in');
     }
 
 

@@ -130,6 +130,7 @@
             <section>
               <ul class="actions stacked">
                 <li><a href="/log" class="button large fit">Log In</a></li>
+                <li><a href="/logout" class="button large fit">Log Out</a></li>
               </ul>
             </section>
 
