@@ -81,7 +81,7 @@
             <ul>
               @if (session('user'))
                       <li><a href="/article/">NEW ARTICLE</a></li>
-                      <li><a href="/log out/">LOG OUT</a></li>
+                      <li><a href="/logout/">LOG OUT</a></li>
                       @else
                       <li><a href="/log/">LOG IN</a></li>
                       @endif
