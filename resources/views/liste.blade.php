@@ -234,7 +234,6 @@
     <script src="{{secure_url('assets/js/breakpoints.min.js')}}"></script>
     <script src="{{secure_url('assets/js/util.js')}}"></script>
     <script src="{{secure_url('assets/js/main.js')}}"></script>
-    <script src="{{secure_url('js/bootstrap.bundle.js')}}"></script>
     </div>
 </body>
 </html>
