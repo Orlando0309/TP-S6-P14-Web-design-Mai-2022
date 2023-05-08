@@ -90,7 +90,7 @@ class ArticleController extends Controller
         foreach($liste as $l){ $this->addslug($l,'titre','slug'); }
 
         $data=['liste'=>$liste];
-        $view= view('liste',$data);
+        $view= view('liste',$data)->render();
         $key="liste";
         if(!Cache::has($key)){
             Cache::put($key, $view);
