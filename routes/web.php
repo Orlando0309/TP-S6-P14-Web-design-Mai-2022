@@ -37,9 +37,23 @@ Route::prefix('article')->group(function () {
 });
 
 
+// Route::middleware('cache.headers:public;max_age=3600;etag')->group(function () {
+//     Route::get('/assets/{any}', function (Request $mylink) {
+//         $path = $mylink->path();
+//         // $path=str_replace('/','\\',$path);
+//         if (File::exists($path)) {
+//             $contentType=(new MymeType())->mime_type($path);
+//             $response = new Illuminate\Http\Response(File::get($path), 200);
+//             $response->header('Content-Type', $contentType);
+//             return $response;
+//         } else {
+//             abort(404);
+//         }
+//     })->where('any', '.*');
+// });
 Route::middleware('cache.headers:public;max_age=3600;etag')->group(function () {
-    Route::get('/assets/{any}', function (Request $request) {
-        $path = $request->path();
+    Route::get('/assets/{any}', function ($mylink) {
+        $path =$mylink;
         // $path=str_replace('/','\\',$path);
         if (File::exists($path)) {
             $contentType=(new MymeType())->mime_type($path);
