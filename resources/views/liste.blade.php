@@ -83,11 +83,6 @@
               <li><a href="/article/">NEW ARTICLE</a></li>
               
               @endif
-
-              <li><a href="#">Ipsum</a></li>
-              <li><a href="#">Feugiat</a></li>
-              <li><a href="#">Tempus</a></li>
-              <li><a href="#">Adipiscing</a></li>
             </ul>
           </nav>
           <nav class="main">
@@ -111,7 +106,6 @@
 
           <!-- Search -->
             <section>
-              <a href="/" class="button large fit">Log In</a>
               <form class="search" method="get" action="/liste">
                 <input type="text" name="query" placeholder="Search" />
                 <input type="submit" value="search">
@@ -208,7 +202,7 @@
           <!-- About -->
             <section class="blurb">
               <h2>About</h2>
-              <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod amet placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at phasellus sed ultricies.</p>
+              <p>A news-style website that covers the latest developments and trends in AI research, business applications, and policy debates. This type of website might have a team of journalists or analysts who produce articles, videos, and podcasts on topics like deep learning, natural language processing, ethical considerations, and emerging use cases. It could also include opinion pieces and interviews with leading experts in the field.</p>
               <ul class="actions">
                 <li><a href="#" class="button">Learn More</a></li>
               </ul>
@@ -223,7 +217,7 @@
                 <li><a href="#" class="icon solid fa-rss"><span class="label">RSS</span></a></li>
                 <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
               </ul>
-              <p class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>. Images: <a href="http://unsplash.com">Unsplash</a>.</p>
+              <p class="copyright">&copy; AI Article. Design: <a href="http://html5up.net">HTML5 UP</a>. Images: <a href="http://unsplash.com">Unsplash</a>.</p>
             </section>
 
         </section>
