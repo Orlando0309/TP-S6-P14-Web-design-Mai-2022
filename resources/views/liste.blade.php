@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="articles lists">
     <title>Liste des Articles</title>
-    <link href="{{secure_url('css/style.css') }}" rel="stylesheet">
-    <link href="{{secure_url('css/style2.css') }}" rel="stylesheet">
     <link href="{{secure_url('assets/css/main.css') }}" rel="stylesheet">
-    <link href="{{secure_url('css/bootstrap.min.css') }}" rel="stylesheet">
+    {{-- <link href="{{secure_url('css/bootstrap.min.css') }}" rel="stylesheet"> --}}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <style>
       .pagination-wrapper {
     text-align: center;

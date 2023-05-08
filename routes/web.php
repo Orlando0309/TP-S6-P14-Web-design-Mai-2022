@@ -41,7 +41,6 @@ Route::middleware('cache.headers:public;max_age=3600;etag')->group(function () {
     Route::get('/assets/{any}', function (Request $request) {
         $path = $request->path();
         // $path=str_replace('/','\\',$path);
-        dd($path);
         if (File::exists($path)) {
             $contentType=(new MymeType())->mime_type($path);
             $response = new Illuminate\Http\Response(File::get($path), 200);
